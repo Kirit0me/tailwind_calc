@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/dist/output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body class="bg-black text-white">
+<div class="flex flex-col justify-center items-center align-middle">
+    <div class="flex-none text-5xl font-extrabold p-6 ">
+        <span class = "text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-red-400">Kirit0me's</span> <br> 
+        <span class = "text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-indigo-300">Calculator</span>
+    </div>
+    <div class="flex-none">
+    <input value="" class="w-96 bg-slate-700 rounded-xl p-2 text-white" id="result" ></div>
+    <div class="h-96 w-96 grid grid-cols-4 gap-4 align-middle justify-center bg-clip-text place-content-stretch">
+        <div class="bg-slate-700 rounded-full place-self-center place-content-stretch" >
+            <button class="bg-clip-text p-4 text-2xl text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400 place-content-stretch" onclick="display('1')">
+                1
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('3')">
+                2
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl  place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('3')">
+                3
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl  place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('+')">
+                +
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl  place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('4')">
+                4
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('5')">
+                5
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl  place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('6')">
+                6
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl  place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('-')">
+                -
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl  place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('7')">
+                7
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl  place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('8')">
+                8
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl  place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('9')">
+                9
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl  place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('*')">
+                *
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl  place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('%')">
+                %
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl   place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="clearScreen()">
+                 AC
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl   place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="display('/')">
+                /
+            </button>
+        </div>
+        <div class="bg-slate-700 rounded-full p-4 text-2xl   place-self-center" >
+            <button class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 to-orange-400" onclick="calculate()">
+                =
+            </button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript" src = "script.js"></script>
+</body>
+</html>
